@@ -1,0 +1,42 @@
+name: fonnx
+description: A new Flutter plugin project.
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: '>=3.3.0'
+
+dependencies:
+  diacritic: ^0.1.5
+  ffi: ^2.1.0
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  ml_linalg: ^13.11.31
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  ffigen: ^9.0.1
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.telosnex.fonnx
+        pluginClass: FonnxPlugin
+      ios:
+        pluginClass: FonnxPlugin
+      linux:
+        pluginClass: FonnxPlugin
+      macos:
+        pluginClass: FonnxPlugin
+      windows:
+        pluginClass: FonnxPluginCApi
+      web:
+        pluginClass: FonnxWeb
+        fileName: fonnx_web.dart
